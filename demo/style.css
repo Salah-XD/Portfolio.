@@ -1,0 +1,46 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/*text-decoration: none;*/
+}
+body{
+	background-color: black;
+}
+.container a{
+	text-decoration: none;
+	font-family: aerial,sans-serif;
+	color: #fff;
+	font-weight: 600;
+	align-items: center;
+	/*padding: 500px;*/
+	font-size: 30px;
+	transition: all 0.3s ease;
+
+}
+.container a:hover{
+	color: crimson;
+
+}
+./*para{
+	padding-top: 20px;
+	margin-left: 20px;
+}*/
+.para{
+	color: #fff;
+	padding:20px;
+}
+h6{
+	color: #fff;
+	font-family: aerial,sans-serif;
+	padding-top: 12px;
+	font-size: 14px
+
+}
+h6 a{
+	color: crimson;
+	font-weight: 600;
+}
+h6 span{
+	color: crimson;
+}
