@@ -445,6 +445,9 @@ section .title{
     
     cursor: pointer;
 }
+.skill .skill-des2{
+    padding: 50px;
+}
 
 .skill .skill-des2{
     margin-top: 50px;
