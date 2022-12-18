@@ -17,6 +17,15 @@ body {
   margin: auto;
 }
 /* ---------pre-loader-------- */
+
+.loader {
+  background: #fff;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  filter: contrast(20);
+  z-index: 1000;
+}
 .gooey {
   position: absolute;
   top: 50%;
@@ -26,7 +35,6 @@ body {
   margin: -20px 0 0 -71px;
   background: #fff;
   background-size: fill;
-  filter: contrast(20);
 }
 .gooey .dot {
   position: absolute;
@@ -252,6 +260,27 @@ section .title {
   padding-bottom: 20px;
   position: relative;
 }
+.title::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 180px;
+  height: 3px;
+  background: #111;
+  transform: translateX(-50%);
+}
+.title::after {
+  content: "who i am";
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  font-size: 20px;
+  color: crimson;
+  padding: 0 5px;
+  background: #fff;
+  transform: translateX(-50%);
+}
 
 .about .row {
   /* width: 100%; */
@@ -334,6 +363,14 @@ section .title {
   padding: 100px 45px;
   box-sizing: border-box;
 }
+.service .title::before {
+  content: "";
+  background: #fff;
+}
+.service .title::after {
+  content: "what i provide";
+  background: #111;
+}
 .service .container .service-des {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));
@@ -381,6 +418,10 @@ section .title {
 .skill .title::before {
   background: #fff;
 }
+.skill .title::after {
+  background: #262626;
+  content: "what i know";
+}
 
 .skill .skill-des,
 .skill .skill-des2 {
@@ -398,9 +439,9 @@ section .title {
 
   cursor: pointer;
 }
-.skill .skill-des2 {
+/* .skill .skill-des2 {
   padding: 50px;
-}
+} */
 
 .skill .skill-des2 {
   margin-top: 50px;
@@ -531,6 +572,9 @@ section .title {
   transition: all 0.3s ease;
   cursor: pointer;
 }
+.team .title::after {
+  content: "who with me";
+}
 .team .carousal .card:hover {
   background: crimson;
 }
@@ -599,7 +643,13 @@ section .title {
   background: #262626;
   font-family: "Ubuntu", sans-serif;
 }
-
+.contact .title::before {
+  background: #fff;
+}
+.contact .title::after {
+  content: "get in touch";
+  background: #262626;
+}
 .contact .contact-des {
   display: flex;
   flex-wrap: wrap;
@@ -958,20 +1008,26 @@ footer span a:hover {
     width: 300px;
   }
 }
+@media (max-width: 400px) {
+  .about .C2 .text span {
+    display: none;
+  }
+  .about .C2 .text2 span {
+    font-size: 25px;
+    display: inline-block;
+    /* width: 100px; */
+  }
+  .home .home-content a {
+    font-size: 20px;
+    padding: 10px 25px;
+  }
+}
 @media (max-width: 381px) {
   .about .C2 .text {
     margin-bottom: 0px;
     /* padding-bottom: 0px; */
   }
 
-  .about .C2 .text span {
-    display: none;
-  }
-  .about .C2 .text2 span {
-    font-size: 25px;
-    display: ruby-base;
-    width: 100%;
-  }
   .service .title::after {
     font-size: 18px;
   }

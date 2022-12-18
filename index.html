@@ -1,11 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-5SHEGCPR8Q"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-5SHEGCPR8Q");
+    </script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>salaH</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/fav.png" />
     <script
       src="https://kit.fontawesome.com/95346ea11f.js"
       crossorigin="anonymous"
@@ -21,13 +36,14 @@
   </head>
   <body>
     <!-- -----------pre-loader--------------- -->
-
-    <div class="gooey">
-      <span class="dot"></span>
-      <div class="dots">
-        <span></span>
-        <span></span>
-        <span></span>
+    <div class="loader">
+      <div class="gooey">
+        <span class="dot"></span>
+        <div class="dots">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
     </div>
     <!-- ------------navbar----------- -->
@@ -59,7 +75,7 @@
           <div class="text2">Mohd.Salahudeen</div>
           <div class="text0">Mohd. Salahudeen</div>
           <div class="text3">And I'm a <span class="typing"></span></div>
-          <a href="#">Contact me</a>
+          <a href="#contact">Contact me</a>
         </div>
       </div>
     </section>
@@ -71,7 +87,7 @@
         <h2 class="title">About Me</h2>
         <div class="row">
           <div class="C1 left">
-            <img src="images/profile-1.jpeg" alt="" class="pimg" />
+            <img src="images/me.jpg" alt="" class="pimg" />
           </div>
           <div class="C2 right">
             <div class="text">
@@ -92,7 +108,12 @@
               free to email me at
               <a href="#" class="mail">thisissalah.dev@gmail.com</a>
             </p>
-            <a href="" class="cv">Download CV</a>
+            <a href="" class="cv" onclick="cv()">Download CV</a>
+            <script>
+              const cv = () => {
+                alert("Not Available!!");
+              };
+            </script>
           </div>
         </div>
       </div>
@@ -257,7 +278,7 @@
         <div class="carousal owl-carousel">
           <div class="card">
             <div class="box">
-              <img src="images/profile-1.jpeg" alt="" />
+              <img src="images/download.jpg" alt="" />
               <div class="text">Naveen Kumar</div>
               <p>
                 typical Web Developer who stands out for clean and responsive
@@ -267,23 +288,25 @@
           </div>
           <div class="card">
             <div class="box">
-              <img src="images/profile-1.jpeg" alt="" />
+              <img src="images/raheem.jpg" alt="" />
               <div class="text">Raheem</div>
               <p>skilled Python programmer and an expert in DataStructure</p>
             </div>
           </div>
           <div class="card">
             <div class="box">
-              <img src="images/profile-1.jpeg" alt="" />
+              <img src="images/andy.jpg" alt="" />
               <div class="text">andy</div>
               <p>talented Flutter Developer and also a Front-end Developer</p>
             </div>
           </div>
           <div class="card">
             <div class="box">
-              <img src="images/profile-1.jpeg" alt="" />
-              <div class="text">Louis</div>
-              <p>skilled at both Front-end and Back-end development</p>
+              <img src="images/harish.jpg" alt="" />
+              <div class="text">Harish</div>
+              <p>
+                skilled at Front-end and Designing !and an Enthusiast in AI/ML
+              </p>
             </div>
           </div>
         </div>
