@@ -573,7 +573,7 @@ section .title {
   cursor: pointer;
 }
 .team .title::after {
-  content: "who are with me";
+  content: "who with me";
 }
 .team .carousal .card:hover {
   background: crimson;
