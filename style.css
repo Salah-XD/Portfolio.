@@ -19,6 +19,7 @@ body {
 /* ---------pre-loader-------- */
 
 .loader {
+  overflow: hidden;
   background: #fff;
   width: 100%;
   height: 100vh;
@@ -437,7 +438,7 @@ section .title {
   padding: 25px;
   border-radius: 15px;
 
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 /* .skill .skill-des2 {
   padding: 50px;
