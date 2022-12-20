@@ -532,8 +532,17 @@ section .title {
 .skill-des .c2 .js::before {
   width: 80%;
 }
+.skill-des .c2 .react::before {
+  width: 80%;
+}
+.skill-des .c2 .node::before {
+  width: 60%;
+}
+.skill-des .c2 .exp::before {
+  width: 50%;
+}
 .skill-des .c2 .sql::before {
-  width: 75%;
+  width: 80%;
 }
 .skill-des .c2 .php::before {
   width: 60%;
@@ -545,10 +554,10 @@ section .title {
   width: 70%;
 }
 .skill-des .c2 .c::before {
-  width: 50%;
+  width: 75%;
 }
 .skill-des2 .c2 .ps::before {
-  width: 50%;
+  width: 70%;
 }
 .skill-des2 .c2 .ae::before {
   width: 90%;
